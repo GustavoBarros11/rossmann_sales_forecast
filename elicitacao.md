@@ -50,3 +50,8 @@
     2. Identificar impeditivos que possam desvalidar o projeto
     3. Entregar valor para empresa rapidamente
 2. Fazer escolhas simples (Keep it Simple)
+
+### 5) Próximos passos:
+- Estudar como adicionar padding e margem nos gráficos do matplotlib
+- Estudar como identificar as distribuições das variáveis e extrair insights sobre elas
+- Adicionar comentários ao longo do Notebook, somente após a finalização do ciclo já que durante o desenvolvimento, eu limitei o número de linhas importadas por conta de tempo de execução.
