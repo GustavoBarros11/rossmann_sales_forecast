@@ -40,7 +40,7 @@
             9. Preparação dos dados
             10. Seleção de atributos
             11. Definição do modelo baseline
-            12. Treinamento de algoritmos de ML
+            12. ,
             13. Avaliação das performances dos modelos nos dataset de validação e teste
     - ENTRADA DE DADOS:
         + [Download dos dados na página da competição no kaggle](https://www.kaggle.com/c/rossmann-store-sales)
