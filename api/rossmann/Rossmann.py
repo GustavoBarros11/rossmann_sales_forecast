@@ -3,13 +3,12 @@ import numpy as np
 import pickle
 import inflection
 import math
-import os
 
 from datetime import datetime, timedelta
 
 class Rossmann(object):
     def __init__(self):
-        self.home_path = os.getcwd()
+        self.home_path = ''
 
         # scalers
         self.competition_distance_scaler = pickle.load(open('parameter/competition_distance_scaler.pkl', 'rb'))
@@ -21,7 +20,6 @@ class Rossmann(object):
         self.week_of_year_scaler = pickle.load(open('parameter/week_of_year_scaler.pkl', 'rb'))
 
         # encoders
-        self.state_holiday_encoder = pickle.load(open('parameter/state_holiday_encoder.pkl', 'rb'))
         self.store_type_encoder = pickle.load(open('parameter/store_type_encoder.pkl', 'rb'))
 
     def data_cleaning(self, df1):
@@ -42,21 +40,6 @@ class Rossmann(object):
         df1['promo2_since_year'] = df1.apply(lambda x: x['date'].year if math.isnan(x['promo2_since_year']) else x['promo2_since_year'], axis=1)
 
         # changing dtypes of varibles
-        # date -> datetime
-        df1['date'] = pd.to_datetime(df1['date'])
-
-        # open -> bool
-        df1['open'] = df1['open'].astype(bool)
-
-        # promo -> bool
-        df1['promo'] = df1['promo'].astype(bool)
-
-        # SchoolHoliday -> bool
-        df1['school_holiday'] = df1['school_holiday'].astype(bool)
-
-        # promo2 -> bool
-        df1['promo2'] = df1['promo2'].astype(bool)
-
         # competition_open_since_year -> int
         df1['competition_open_since_year'] = df1['competition_open_since_year'].astype(int)
 
@@ -149,10 +132,7 @@ class Rossmann(object):
 
         # Encoders
         # promo, school_holiday, promo2, is_promo -> OneHot
-        df3 = pd.get_dummies( df3, prefix=['promo', 'school_holiday', 'promo2', 'is_promo'], columns=['promo', 'school_holiday', 'promo2', 'is_promo'] )
-
-        # state_holiday -> Label *
-        df3['state_holiday'] = self.state_holiday_encoder.fit_transform(df3['state_holiday'])
+        df3 = pd.get_dummies( df3, prefix=['state_holiday'], columns=['state_holiday'] )
 
         # store_type -> Label *
         df3['store_type'] = self.store_type_encoder.fit_transform(df3['store_type'])
@@ -180,8 +160,8 @@ class Rossmann(object):
         df3['week_of_year_cos'] = df3['week_of_year'].apply( lambda x: np.cos( x * ( 2. * np.pi/52 ) ) )
 
         # Feature Selection
-        cols_selected = ['store','promo_False','promo_True','store_type',
-        'assortment','competition_distance','competition_open_since_month','competition_open_since_year','promo2_False','promo2_True','promo2_since_week',
+        cols_selected = ['store','promo','store_type',
+        'assortment','competition_distance','competition_open_since_month','competition_open_since_year','promo2','promo2_since_week',
         'promo2_since_year','competition_duration','promo_time_week','day_of_week_sin','day_of_week_cos',
         'month_sin','month_cos','day_sin','day_cos','week_of_year_sin','week_of_year_cos',]
 
