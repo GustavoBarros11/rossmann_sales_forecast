@@ -6,5 +6,5 @@ inflection
 matplotlib
 numpy
 pandas
-pickleshare
 requests
+xgboost
