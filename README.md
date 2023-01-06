@@ -1,7 +1,16 @@
 # **Rossmann Sales Forecast**
-![jpg](img/bg.jpeg)
+![jpg](img/rossmann_logo.png)
 
-O CFO da empresa fez uma reunião com todos Gerentes de Loja e pediu para que cada um deles trouxesse uma previsão diária das próximas 6 semanas de vendas. Depois desa reunião, todos os Gerentes entraram em contato com você, requisitando uma previsão de vendas de suas lojas.
+Este projeto foi orientado pela [Comunidade DS](), utilizando os dados disponíveis no [Kaggle]() da Rede de Lojas Rossmann.
+
+**Produto final:**
+- [Dashboard](): Análise Exploratória de Dados
+- [BotTelegram](): Previsão de Vendas com Aprendizado de Máquina (Machine Learning)
+
+# 1. Entendendo o Problema de Negócio
+> O CFO da empresa fez uma reunião com todos Gerentes de Loja e pediu para que cada um deles trouxesse uma previsão diária das próximas 6 semanas de vendas. Depois desa reunião, todos os Gerentes entraram em contato com você, requisitando uma previsão de vendas de suas lojas.
+
+
 
 # Dicionário dos Dados
 Variable | Description
