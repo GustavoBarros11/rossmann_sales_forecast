@@ -128,18 +128,18 @@ Para avaliação dos algoritmos, foi utilizada uma variação do método de Cros
 **Foram obtidos os seguintes resultados:**
 Modelo | MAE | MAPE | RMSE
 --------|------------ | --------- | ------
-Random Forest Regression | 833.511708 | 0.120853 | 1238.412287
+Average Model | 1354.80 +/- 0.0 | 0.45 +/- 0.0 | 1835.13 +/- 0.0
+Linear Regression | 2032.90 +/- 247.14 | 0.30 +/- 0.01 | 2885.37 +/- 348.96
+Lasso Regression | 2388.68 +/- 398.48 | 0.34 +/- 0.01 | 3369.37 +/- 567.55
+Random Forest Regression | 685.94 | 0.10 | 1021.96
 XGBoot Regression | 997.735638 | 0.143812 | 1439.025268
-Average Model | 1354.800353 | 0.455051 | 1835.135542
-Linear Regression - Lasso | 1891.712702 | 0.289104 | 2744.465343
-Linear Regression | 2062.201665 | 0.301743 | 3076.085627
 
 Apesar do algoritmo Random Forest ter tido o melhor desempenho, algoritmo escolhido para este primeiro ciclo do CRISP foi o XGBoost. Isso se deve ao fato deste algoritmo ser mais enxuto que o Random Forest.
 
 **Performance do Modelo Final com Fine-Tunning:**
 Modelo | MAE | MAPE | RMSE
 --------|------------ | --------- | ------
-XGBoot (Tunado) | 997.695478 | 0.14018 | 1421.43486
+XGBoot (Tunado) | 997.69 | 0.14 | 1421.43
 
 ![jpg](img/final_model.png)
 
@@ -154,13 +154,13 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 
 
 # 6. Deploy em Produção
-### 6.1. API de predição em Real Time (handler.py)
+### 6.1. API de predição em Real Time
 > Essa API será responsável por retornar a previsão de vendas com base nos atributos da lojas.
 
 ![jpg](img/api_handler.png)
 
 
-### 6.1. Bot do Telegram para uso do 'CEO' (handler.py)
+### 6.1. Bot do Telegram para uso do 'CEO'
 > Esta API é responsável pela comunicação com o usuário final, gerenciando as mensagens de boas vindas, de erro e de resposta às solicitações de previsão no chat do Telegram
 
 ![jpg](img/.png)
