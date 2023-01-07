@@ -1,12 +1,12 @@
 # **Rossmann Sales Forecast**
 ![jpg](img/rossmann_logo.png)
 
-Este projeto foi orientado pela [Comunidade DS](), utilizando os dados disponíveis no [Kaggle]() da Rede de Lojas Rossmann.
+Este projeto foi orientado pela [Comunidade DS](https://comunidadeds.com/), utilizando os dados disponíveis no [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales) da Rede de Lojas Rossmann.
 
 **Produto final:**
 - [Análises](): Análise Exploratória de Dados
-- [Dashboard](): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
-- [BotTelegram](): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar 
+- [Dashboard](https://rossmann-sales-forecast.onrender.com): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
+- [BotTelegram](http://t.me/gustavos_rossmann_bot): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar 
 
 # 1. Entendendo o Problema de Negócio
 ### 1.1. Contexto
@@ -163,7 +163,7 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 ### 6.1. Bot do Telegram para uso do 'CEO'
 > Esta API é responsável pela comunicação com o usuário final, gerenciando as mensagens de boas vindas, de erro e de resposta às solicitações de previsão no chat do Telegram
 
-![jpg](img/.png)
+<center>https://github.com/GustavoBarros11/rossmann_sales_forecast/blob/main/img/bot_capture.mp4</center>
 
 # 7. Conclusão e Próximos Passos
 O objetivo final foi alcançado, melhorando e padronizando a metodologia de previsão de vendas e também tornando estes dados acessíveis de forma rápida e prática. Além de gerar Insights importantes para a tomada de decisão e que ajudaram na construção da solução de Machine Learning.
