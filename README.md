@@ -163,7 +163,8 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 ### 6.1. Bot do Telegram para uso do 'CEO'
 > Esta API é responsável pela comunicação com o usuário final, gerenciando as mensagens de boas vindas, de erro e de resposta às solicitações de previsão no chat do Telegram
 
-<center>https://github.com/GustavoBarros11/rossmann_sales_forecast/blob/main/img/bot_capture.mp4</center>
+https://user-images.githubusercontent.com/18746743/211162965-4b226afc-07f9-48a0-9d4a-0d25e3489592.mp4
+
 
 # 7. Conclusão e Próximos Passos
 O objetivo final foi alcançado, melhorando e padronizando a metodologia de previsão de vendas e também tornando estes dados acessíveis de forma rápida e prática. Além de gerar Insights importantes para a tomada de decisão e que ajudaram na construção da solução de Machine Learning.
