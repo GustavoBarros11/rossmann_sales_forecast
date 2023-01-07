@@ -107,7 +107,7 @@ Lista com os principais insights adiquiridos durante a etapa de Análise Explora
 - ✅ **VERDADEIRO** Lojas vendem cerca de 22,6% mais, na média, nos fins de semana do que em dias regulares da semana.
 
 **H12) Lojas deveriam vender menos durante os feriados escolares.**
-- ✅ **VERDADEIRO** Lojas vendem cerca de % mais, na média, em dias de feriados escolares do que em outros dias.
+- ✅ **VERDADEIRO** Lojas vendem cerca de 4,4% mais, na média, em dias de feriados escolares do que em outros dias.
 
 # 4. Performance dos Algoritmos de Machine Learning
 Dado a questão de negócio apresentada, temos então um problema de Regressão uma vez que a variável resposta deve ser um valor real (no nosso caso, o valor das vendas de cada loja)
@@ -131,15 +131,15 @@ Modelo | MAE | MAPE | RMSE
 Average Model | 1354.80 +/- 0.0 | 0.45 +/- 0.0 | 1835.13 +/- 0.0
 Linear Regression | 2032.90 +/- 247.14 | 0.30 +/- 0.01 | 2885.37 +/- 348.96
 Lasso Regression | 2388.68 +/- 398.48 | 0.34 +/- 0.01 | 3369.37 +/- 567.55
-Random Forest Regression | 685.94 | 0.10 | 1021.96
-XGBoot Regression | 997.735638 | 0.143812 | 1439.025268
+Random Forest Regression | 822.48 +/- 199.17 | 0.11 +/- 0.02 | 1228.25 +/- 289.76
+XGBoot Regression | 987.44 +/- 140.87 | 0.14 +/- 0.01 | 1417.54 +/- 155.9
 
 Apesar do algoritmo Random Forest ter tido o melhor desempenho, algoritmo escolhido para este primeiro ciclo do CRISP foi o XGBoost. Isso se deve ao fato deste algoritmo ser mais enxuto que o Random Forest.
 
 **Performance do Modelo Final com Fine-Tunning:**
 Modelo | MAE | MAPE | RMSE
 --------|------------ | --------- | ------
-XGBoot (Tunado) | 997.69 | 0.14 | 1421.43
+XGBoot (Tunado) | 942.86 +/- 122.22 | 0.13 +/- 0.01 | 1343.04 +/- 166.7
 
 ![jpg](img/final_model.png)
 
