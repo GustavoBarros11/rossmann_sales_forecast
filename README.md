@@ -5,9 +5,9 @@ Este projeto foi orientado pela [Comunidade DS](https://comunidadeds.com/), util
 
 **Produto final:**
 - [Análises](https://github.com/GustavoBarros11/rossmann_sales_forecast/blob/main/notebook_final.ipynb): Análise Exploratória de Dados
-- [Dashboard](https://rossmann-sales-forecast-app.onrender.com/): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
+- [APP](https://rossmann-sales-forecast-app.onrender.com/): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
 - [BotTelegram](http://t.me/gustavos_rossmann_bot): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar
-- API de consumo do modelo de ML
+- [API do Modelo de ML](https://github.com/GustavoBarros11/rossmann_sales_forecast/tree/main/rossmann-api)
 
 # 1. Entendendo o Problema de Negócio
 ### 1.1. Contexto
