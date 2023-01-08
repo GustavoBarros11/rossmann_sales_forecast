@@ -151,6 +151,10 @@ def rossmann_predict():
 def health_check():
     return Response( '{}', status=200 )
 
+@app.route( '/', methods=['GET'] )
+def app():
+    return Response( '{}', status=200 )
+
 if __name__ == '__main__':
     port = os.environ.get('PORT', 5000)
     app.run(host='0.0.0.0', port=port)
