@@ -4,9 +4,10 @@
 Este projeto foi orientado pela [Comunidade DS](https://comunidadeds.com/), utilizando os dados disponíveis no [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales) da Rede de Lojas Rossmann.
 
 **Produto final:**
-- [Análises](): Análise Exploratória de Dados
-- [Dashboard](https://rossmann-sales-forecast.onrender.com): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
-- [BotTelegram](http://t.me/gustavos_rossmann_bot): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar 
+- [Análises](https://github.com/GustavoBarros11/rossmann_sales_forecast/blob/main/notebook_final.ipynb): Análise Exploratória de Dados
+- [Dashboard](https://rossmann-sales-forecast-app.onrender.com/): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
+- [BotTelegram](http://t.me/gustavos_rossmann_bot): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar
+- API de consumo do modelo de ML
 
 # 1. Entendendo o Problema de Negócio
 ### 1.1. Contexto
