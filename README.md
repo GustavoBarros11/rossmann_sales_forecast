@@ -156,10 +156,6 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 
 # 6. Deploy em Produção
 ### 6.1. API de consumo do modelo de ML
-> Essa API será responsável por retornar a previsão de vendas com base nos atributos da lojas.
-
-![jpg](img/api_handler.png)
-
 
 ### 6.2. Bot do Telegram para uso do 'CEO'
 > Esta API é responsável pela comunicação com o usuário final, gerenciando as mensagens de boas vindas, de erro e de resposta às solicitações de previsão no chat do Telegram
