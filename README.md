@@ -4,9 +4,9 @@
 Este projeto foi orientado pela [Comunidade DS](https://comunidadeds.com/), utilizando os dados disponíveis no [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales) da Rede de Lojas Rossmann.
 
 **Produto final:**
-- [Análises](https://github.com/GustavoBarros11/rossmann_sales_forecast/blob/main/notebook_final.ipynb): Análise Exploratória de Dados
-- [APP](https://rossmann-sales-forecast-app.onrender.com/): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)
-- [BotTelegram](http://t.me/gustavos_rossmann_bot): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar
+- [Análises](https://github.com/GustavoBarros11/rossmann_sales_forecast/blob/main/notebook_final.ipynb): Análise Exploratória de Dados	
+- [APP](https://rossmann-sales-forecast-app.onrender.com/): Previsão de Vendas em Tempo Real com Aprendizado de Máquina (Machine Learning)	
+- [BotTelegram](http://t.me/gustavos_rossmann_bot): Meio de entrega, lugar onde a solução pode ser acessada 24/7 de qualquer lugar	
 - [API do Modelo de ML](https://github.com/GustavoBarros11/rossmann_sales_forecast/tree/main/rossmann-api)
 
 # 1. Entendendo o Problema de Negócio
@@ -111,11 +111,7 @@ Lista com os principais insights adiquiridos durante a etapa de Análise Explora
 - ✅ **VERDADEIRO** Lojas vendem cerca de 4,4% mais, na média, em dias de feriados escolares do que em outros dias.
 
 # 4. Performance dos Algoritmos de Machine Learning
-Dado a questão de negócio apresentada, temos então um problema de Regressão uma vez que a variável resposta deve ser um valor real (no nosso caso, o valor das vendas de cada loja)
-
-Assim, foram realizados testes com 4 algoritmos onde o que apresentou a melhor performance foi selecionado para o modelo
-
-- Uma vez que ainda não sabemos se a natureza do fenômeno de vendas é linear ou não linear, selecionamos 2 algoritmos lineares e 2 não lineares.
+A questão de negócio apresentada envolve um problema de regressão, pois a variável resposta é um valor real (neste caso, o valor das vendas de cada loja). Testes foram realizados com quatro algoritmos e o que apresentou a melhor performance foi selecionado para o modelo final.
 
 Os algoritmos selecionados para o teste foram:
 
@@ -135,7 +131,7 @@ Lasso Regression | 2388.68 +/- 398.48 | 0.34 +/- 0.01 | 3369.37 +/- 567.55
 Random Forest Regression | 822.48 +/- 199.17 | 0.11 +/- 0.02 | 1228.25 +/- 289.76
 XGBoot Regression | 987.44 +/- 140.87 | 0.14 +/- 0.01 | 1417.54 +/- 155.9
 
-Apesar do algoritmo Random Forest ter tido o melhor desempenho, algoritmo escolhido para este primeiro ciclo do CRISP foi o XGBoost. Isso se deve ao fato deste algoritmo ser mais enxuto que o Random Forest.
+Embora o modelo Random Forest tenha apresentado o melhor desempenho nos testes, optou-se pelo uso do XGBoost neste primeiro ciclo do CRISP, muito por conta da sua maior eficiência na geração do modelo resultante que é diversas vezes mais enxuto que o modelo resultante da Random Forest. Isso não somente reduz os custos de manutenção e armazenamento dos modelos em produção, quanto permite um tempo de processamento menor.
 
 **Performance do Modelo Final com Fine-Tunning:**
 Modelo | MAE | MAPE | RMSE
@@ -156,6 +152,10 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 
 # 6. Deploy em Produção
 ### 6.1. API de consumo do modelo de ML
+> A função desta API é o de retornar a previsão das vendas baseadas nas características das lojas solicitadas pelo usuário, podendo ser mais de uma por solicitação:
+
+![jpg](img/handler-api-diagram.png)
+
 
 ### 6.2. Bot do Telegram para uso do 'CEO'
 > Esta API é responsável pela comunicação com o usuário final, gerenciando as mensagens de boas vindas, de erro e de resposta às solicitações de previsão no chat do Telegram
