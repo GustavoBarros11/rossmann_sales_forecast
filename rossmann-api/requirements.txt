@@ -3,7 +3,6 @@
 # platform: linux-64
 flask
 inflection
-matplotlib
 numpy
 pandas
 requests

@@ -49,7 +49,7 @@ def load_dataset( store_id ):
 
 def predict( data ):
     # API Call
-    url = 'https://rossmann-sales-forecast.onrender.com/rossmann/predict'
+    url = 'http://localhost:5000/rossmann/predict'
     header = {'Content-type': 'application/json' }
     data = data
 
@@ -143,7 +143,6 @@ def rossmann_predict():
         
         return df_response
         
-        
     else:
         return Response( '{}', status=200, mimetype='application/json' )
     
@@ -152,7 +151,7 @@ def health_check():
     return Response( '{}', status=200 )
 
 @app.route( '/', methods=['GET'] )
-def app():
+def main():
     return Response( '{}', status=200 )
 
 if __name__ == '__main__':

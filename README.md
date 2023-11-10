@@ -151,7 +151,7 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 
 
 # 6. Deploy em Produção
-### 6.1. API de consumo do modelo de ML
+### 6.1. API de consumo do modelo de ML1
 > A função desta API é o de retornar a previsão das vendas baseadas nas características das lojas solicitadas pelo usuário, podendo ser mais de uma por solicitação:
 
 ![jpg](img/handler-api-diagram.png)
@@ -162,7 +162,7 @@ Baseline (Média) | $324.608.344,00 | $324.608.344,00 | $324.608.344,00
 
 https://user-images.githubusercontent.com/18746743/211162965-4b226afc-07f9-48a0-9d4a-0d25e3489592.mp4
 
-### 6.3. APP de demonstação da Solução
+### 6.3. APP de demonstração da Solução
 Neste aplicativo desenvolvido com o streamlite, você pode inputar valores para uma determinada Loja e obter a respectiva previsão das vendas para ela no selecionado dia.
 
 ![jpg](img/app.png)
